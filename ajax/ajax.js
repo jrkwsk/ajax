@@ -35,7 +35,7 @@ function ajax(method, url) {
 
                 var obj = JSON.parse(data);
 
-                document.getElementById("odp").innerHTML =
+                document.getElementByTagName("p:last").innerHTML =
                     "User ID: " + obj.userId + " " + "<br>" + "User name: " + obj.userName + "<br>" +
                     "User URL: " + obj.userURL
             }
